@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Blog",
+		"date": "15thjuly",
+		"detail": "To do a django project",
+		"available": true
+	},
+	{
+		"name": "weather app",
+		"date": "01july",
+		"detail": "Weather application using angular js",
+		"available": false
+	},
+	{
+		"name": "Movie",
+		"date": "25june",
+		"detail": " watch The Imitation Game movie",
+		"available": true
+	},
+	{
+		"name": "Drawing",
+		"date": "30july",
+		"detail": "Draw the avater characters",
+		"available": false
+	}
+]

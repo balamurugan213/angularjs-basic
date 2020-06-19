@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mgodapp">
+<head>
+  <base href="/">
+  <title>Angular JS</title>
+  <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="./app/angular.main.js"></script>
+  <script src="./app/angular.route.main.js"></script>
+  <script src="./app/angular.animate.main.js"></script>
+  <script src="./app/app.js"></script>
+</head>
+<!-- <body ng-init="god=['eee','cse','ece','mech']"> -->
+<body>
+  <!-- <input type="text" ng-model='favm' placeholder="ddd">
+  <p>Dynamic Data{{favm}}</p>
+  <ul>
+    <li ng-repeat="d in god">{{d}}</li>
+  </ul> -->
+  <header ng-include="'header.html'"></header>
+  <main ng-view></main>
+</body>
+<!-- <main ng-view></main> -->
+</html>

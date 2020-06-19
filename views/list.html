@@ -1,0 +1,27 @@
+<div class="content">
+    <button ng-click="order='name'">order By Name</button>
+    <button ng-click="order='date'">order By Date</button>
+    <!-- <p>{{message}}</p> -->
+    <input type="text" placeholder="Search" ng-model="search">
+    <ul class="god-list">
+        <li style="background-color: rgb(255, 187, 0); padding: 10px;">
+            <h3>List</h3>
+            <span class="belt" style="color: black;">Date</span>
+        </li>
+        <li ng-repeat="g in god | orderBy:order |filter:search ">
+            <h3>{{g.name}}- <span style="color: rgb(182, 133, 0); font-size: 25px;"> {{g.detail}} </span></h3>
+            <div class="remove" ng-click="removeg(g)">X</div>
+            <span class="belt" style="color: black;">{{g.date}}</span>
+        </li>
+    </ul>
+    <div style="height: 5px; background-color: rgb(255, 187, 0); margin: 1rem; ">
+    </div>
+    <h3>Add To List</h3>
+    <form ng-submit="addToList()">
+        <input type="text" placeholder="name" ng-model="newg.name">
+        <input type="text" placeholder="end date" ng-model="newg.date">
+        <input type="text" placeholder="details" ng-model="newg.detail">
+        <input type="submit" value="add">
+    </form>
+    <a href="" ng-click="removeAll()">RemoveAll</a>
+</div>
